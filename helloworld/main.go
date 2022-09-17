@@ -16,6 +16,20 @@ func main() {
 
 	fmt.Println(unExported)
 	fmt.Println(unExpected2)
+
+	var myString string
+	myString = "Green"
+
+	fmt.Println(myString)
+
+	changeUsingPointer(&myString)
+
+	fmt.Println(myString)
+
+}
+
+func changeUsingPointer(myString *string) {
+	*myString = "Red"
 }
 
 func twoReturn() (int, int) {
