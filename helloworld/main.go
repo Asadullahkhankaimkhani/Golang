@@ -107,6 +107,16 @@ func main() {
 	// 	log.Println("Default")
 	// }
 
+	// for i := 0; i <= 10; i++ {
+	// 	log.Println(i)
+	// }
+
+	// animals := []string{"Dog", "Cat", "Bird"}
+
+	// for _, animal := range animals {
+	// 	log.Println(animal)
+	// }
+
 }
 
 // type myStruct struct {
