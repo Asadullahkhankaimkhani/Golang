@@ -1,7 +1,5 @@
 package main
 
-import "log"
-
 var s = "Hello"
 
 type User struct {
@@ -84,11 +82,30 @@ func main() {
 
 	// log.Println(mySlice)
 
-	names := []string{"John", "Wick", "Doe"}
+	// names := []string{"John", "Wick", "Doe"}
 
-	for i, name := range names {
-		log.Println(i, name)
-	}
+	// for i, name := range names {
+	// 	log.Println(i, name)
+	// }
+
+	// if true {
+	// 	log.Println("true")
+	// } else {
+	// 	log.Println("false")
+	// }
+
+	// decision structure is same as C
+
+	// switch statement
+
+	// switch "John" {
+	// case "John":
+	// 	log.Println("John")
+	// case "Wick":
+	// 	log.Println("Wick")
+	// default:
+	// 	log.Println("Default")
+	// }
 
 }
 
