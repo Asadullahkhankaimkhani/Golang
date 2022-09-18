@@ -40,12 +40,30 @@ func main() {
 	//log.Println(s2)
 	//log.Println(s)
 
-	var user User
-	user.Name = "John"
-	user.Age = 30
+	// var user User
+	// user.Name = "John"
+	// user.Age = 30
 
-	log.Println(user)
+	// log.Println(user)
 
+	var1 := myStruct{
+		Name: "John",
+	}
+
+	var var2 myStruct
+	var2.Name = "Wick"
+
+	log.Println(var1.demoFunction())
+	log.Println(var2.demoFunction())
+
+}
+
+type myStruct struct {
+	Name string
+}
+
+func (m *myStruct) demoFunction() string {
+	return m.Name
 }
 
 // func changeUsingPointer(myString *string) {
