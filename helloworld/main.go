@@ -46,25 +46,59 @@ func main() {
 
 	// log.Println(user)
 
-	var1 := myStruct{
-		Name: "John",
+	// var1 := myStruct{
+	// 	Name: "John",
+	// }
+
+	// var var2 myStruct
+	// var2.Name = "Wick"
+
+	// log.Println(var1.demoFunction())
+	// log.Println(var2.demoFunction())
+
+	// myMap := make(map[string]User)
+
+	// myMap["0"] = User{
+	// 	Name: "John",
+	// 	Age:  30,
+	// }
+
+	// log.Println(myMap["0"])
+
+	// var mySlice []User
+
+	// mySlice = append(mySlice, User{
+	// 	Name: "John",
+	// 	Age:  30,
+	// })
+
+	// log.Println(mySlice[0])\
+
+	// var mySlice []int
+
+	// mySlice = append(mySlice, 1)
+	// mySlice = append(mySlice, 2)
+	// mySlice = append(mySlice, 3)
+
+	// sort.Ints(mySlice)
+
+	// log.Println(mySlice)
+
+	names := []string{"John", "Wick", "Doe"}
+
+	for i, name := range names {
+		log.Println(i, name)
 	}
 
-	var var2 myStruct
-	var2.Name = "Wick"
-
-	log.Println(var1.demoFunction())
-	log.Println(var2.demoFunction())
-
 }
 
-type myStruct struct {
-	Name string
-}
+// type myStruct struct {
+// 	Name string
+// }
 
-func (m *myStruct) demoFunction() string {
-	return m.Name
-}
+// func (m *myStruct) demoFunction() string {
+// 	return m.Name
+// }
 
 // func changeUsingPointer(myString *string) {
 // 	*myString = "Red"
