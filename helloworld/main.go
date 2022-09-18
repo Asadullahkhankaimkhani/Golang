@@ -1,10 +1,25 @@
 package main
 
+import "fmt"
+
 var s = "Hello"
 
 type User struct {
 	Name string
 	Age  int
+}
+
+type Animal interface {
+	Speak() string
+	NumberOfLegs() int
+}
+
+type Dog struct {
+	Name string
+}
+
+type Gorilla struct {
+	Name string
 }
 
 func main() {
@@ -117,6 +132,38 @@ func main() {
 	// 	log.Println(animal)
 	// }
 
+	dog := Dog{
+		Name: "Dog",
+	}
+
+	gorilla := Gorilla{
+		Name: "Gorilla",
+	}
+
+	PrintInfo(&dog)
+	PrintInfo(&gorilla)
+
+}
+
+func PrintInfo(animal Animal) {
+	fmt.Println(animal.Speak())
+	fmt.Println(animal.NumberOfLegs())
+}
+
+func (dog *Dog) Speak() string {
+	return "Woof"
+}
+
+func (dog *Dog) NumberOfLegs() int {
+	return 4
+}
+
+func (gorilla *Gorilla) Speak() string {
+	return "Ooh Ooh Ah Ah"
+}
+
+func (gorilla *Gorilla) NumberOfLegs() int {
+	return 2
 }
 
 // type myStruct struct {
