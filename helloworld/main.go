@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var s = "Hello"
 
 type User struct {
@@ -23,6 +21,7 @@ type Gorilla struct {
 }
 
 func main() {
+
 	// fmt.Println("Hello, World!")
 
 	// var whattoSay string
@@ -132,39 +131,40 @@ func main() {
 	// 	log.Println(animal)
 	// }
 
-	dog := Dog{
-		Name: "Dog",
-	}
+	// dog := Dog{
+	// 	Name: "Dog",
+	// }
 
-	gorilla := Gorilla{
-		Name: "Gorilla",
-	}
+	// gorilla := Gorilla{
+	// 	Name: "Gorilla",
+	// }
 
-	PrintInfo(&dog)
-	PrintInfo(&gorilla)
+	// PrintInfo(&dog)
+	// PrintInfo(&gorilla)
 
+	v1, v2 := twoReturn()
 }
 
-func PrintInfo(animal Animal) {
-	fmt.Println(animal.Speak())
-	fmt.Println(animal.NumberOfLegs())
-}
+// func PrintInfo(animal Animal) {
+// 	fmt.Println(animal.Speak())
+// 	fmt.Println(animal.NumberOfLegs())
+// }
 
-func (dog *Dog) Speak() string {
-	return "Woof"
-}
+// func (dog *Dog) Speak() string {
+// 	return "Woof"
+// }
 
-func (dog *Dog) NumberOfLegs() int {
-	return 4
-}
+// func (dog *Dog) NumberOfLegs() int {
+// 	return 4
+// }
 
-func (gorilla *Gorilla) Speak() string {
-	return "Ooh Ooh Ah Ah"
-}
+// func (gorilla *Gorilla) Speak() string {
+// 	return "Ooh Ooh Ah Ah"
+// }
 
-func (gorilla *Gorilla) NumberOfLegs() int {
-	return 2
-}
+// func (gorilla *Gorilla) NumberOfLegs() int {
+// 	return 2
+// }
 
 // type myStruct struct {
 // 	Name string
