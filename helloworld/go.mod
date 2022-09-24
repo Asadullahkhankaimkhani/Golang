@@ -1,3 +1,3 @@
-module github.com/asadullahkhankaimkhani/helloworld
+module github.com/helloWorld
 
 go 1.19

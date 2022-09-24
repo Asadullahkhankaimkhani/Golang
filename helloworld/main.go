@@ -1,10 +1,11 @@
 package main
 
+import "github.com/helloWorld/helpers"
+
 var s = "Hello"
 
 type User struct {
 	Name string
-	Age  int
 }
 
 type Animal interface {
@@ -21,6 +22,10 @@ type Gorilla struct {
 }
 
 func main() {
+
+	v1 := helpers.RandomNumber()
+
+	println(v1)
 
 	// fmt.Println("Hello, World!")
 
@@ -142,7 +147,11 @@ func main() {
 	// PrintInfo(&dog)
 	// PrintInfo(&gorilla)
 
-	v1, v2 := twoReturn()
+	// v1, v2 := twoReturn()
+
+	// log.Println(v1)
+	// log.Println(v2)
+
 }
 
 // func PrintInfo(animal Animal) {
@@ -159,12 +168,10 @@ func main() {
 // }
 
 // func (gorilla *Gorilla) Speak() string {
-// 	return "Ooh Ooh Ah Ah"
-// }
+// 	return "Ooh Ooh Ahhhelpers.RandomNumber
 
 // func (gorilla *Gorilla) NumberOfLegs() int {
 // 	return 2
-// }
 
 // type myStruct struct {
 // 	Name string
@@ -176,8 +183,4 @@ func main() {
 
 // func changeUsingPointer(myString *string) {
 // 	*myString = "Red"
-// }
-
-// func twoReturn() (int, int) {
-// 	return 1, 2
 // }
